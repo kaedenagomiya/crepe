@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # for CREPE ==============================
 # [x][MIR-1k](http://mirlab.org/dataset/public/)
