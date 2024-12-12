@@ -4,6 +4,7 @@ cmd.sh
 memo.md
 *.sif
 test_*
+logs4run
 
 wandb
 data/*
