@@ -1,8 +1,9 @@
 ### Custom Setting ###
 
 
-# Created by https://www.toptal.com/developers/gitignore/api/git,macos,linux,python,pydev,venv,jupyternotebooks
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,macos,linux,python,pydev,venv,jupyternotebooks
+
+# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,git,python,venv,pydev,jupyternotebooks
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,git,python,venv,pydev,jupyternotebooks
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -265,4 +266,30 @@ pyrightconfig.json
 pyvenv.cfg
 pip-selfcheck.json
 
-# End of https://www.toptal.com/developers/gitignore/api/git,macos,linux,python,pydev,venv,jupyternotebooks
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,git,python,venv,pydev,jupyternotebooks
