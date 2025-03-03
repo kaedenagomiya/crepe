@@ -1,0 +1,26 @@
+[project]
+name = "crepe"
+version = "0.1.0"
+description = "Pitch Tracker with CREPE."
+readme = "README.md"
+requires-python = ">=3.10.14"
+dependencies = [
+    "torch",
+    "torchaudio",
+]
+
+
+# Linux on x86 with cuda (linux_x86_64)
+# Linux on aarch64 or Docker on M1 Mac (manylinux_aarch64)
+# M1 Mac (macosx_arm64)
+[tool.uv.sources]
+torch = [
+    { url = "https://download.pytorch.org/whl/cu121/torch-2.3.1%2Bcu121-cp310-cp310-linux_x86_64.whl", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" },
+    { url = "https://download.pytorch.org/whl/cpu/torch-2.3.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", marker = "sys_platform == 'linux' and platform_machine == 'aarch64'" },
+    { url = "https://download.pytorch.org/whl/cpu/torch-2.3.1-cp310-none-macosx_11_0_arm64.whl", marker = "sys_platform == 'darwin' and platform_machine == 'arm64'" },
+]
+torchaudio = [
+    { url = "https://download.pytorch.org/whl/cu121/torchaudio-2.3.1%2Bcu121-cp310-cp310-linux_x86_64.whl", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" },
+    { url = "https://download.pytorch.org/whl/cpu/torchaudio-2.3.1-cp310-cp310-linux_aarch64.whl", marker = "sys_platform == 'linux' and platform_machine == 'aarch64'" },
+    { url = "https://download.pytorch.org/whl/cpu/torchaudio-2.3.1-cp310-cp310-macosx_11_0_arm64.whl", marker = "sys_platform == 'darwin' and platform_machine == 'arm64'" },
+]
