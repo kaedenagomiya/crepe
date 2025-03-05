@@ -1,0 +1,11 @@
+model_name: crepe
+runtime_name: train_crepe_tiny
+model_capacity: tiny
+path_save_model: ./crepe/pretrained/crepe.pt
+device: cuda
+seed: 1234
+learning_rate: 0.0001
+num_epoch: 50000
+num_batches_per_epoch: 8
+max_epochs_without_improvement: 3
+samplerate: 16000
