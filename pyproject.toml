@@ -34,6 +34,10 @@ dependencies = [
 # Linux on x86 with cuda (linux_x86_64)
 # M1 Mac (macosx_arm64)
 # ~~Linux on aarch64 or Docker on M1 Mac (manylinux_aarch64)~~
+# Another way to write e.g.
+# [[tool.uv.sources.torch]]
+# url = "https://download.pytorch.org/whl/cu121/torch-2.3.1%2Bcu121-cp310-cp310-linux_x86_64.whl"
+# marker = "sys_platform == 'linux' and platform_machine == 'x86_64'"
 
 [tool.uv.sources]
 torch = [
