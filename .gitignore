@@ -2,8 +2,8 @@
 *.wav
 *.png
 data/*
+crepe/pretrained/*
 memo.md
-
 wandb
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,git,python,venv,pydev,jupyternotebooks
